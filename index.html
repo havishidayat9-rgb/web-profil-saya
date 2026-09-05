@@ -1,37 +1,69 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang ="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web profil saya</title>
+    <meta name ="viewport" content="width=device-width, intial-scale=1.0">
+    <title>protofolio profil siswa</title>
 </head>
 <body>
 
-    <h1>Halo, selamat datang di web saya!</h1>
-    <p>ini adalah halaman web pertama yang saya buat di kelas web design. </p>
+    <!-- 1. HEADER (PARENT UTAMA BAGIAN ATAS)-->
+     <header class="header-utama">
+        <h1>Havis Hidayat</h1>
+        <p>siswa kelas 10 SMA | Calon web Developer</p>
+
+        <!--NAV ADALAH  CHILD DARI HEADER,PARENT DARI LINK-->
+        <nav class="navigasi-web">
+            <a href="#tentang">Tentang</a> |
+            <a href="#keahlian">keahlian</a> |
+            <a href="#proyek">proyek</a> |
+            <a href="#kontak">kontak</a>
+        </nav>
+    </header>
 
     <hr>
 
-    <h2>biodata siswa</h2>
-    <uL>
-        <LI><strong>Nama:</strong> Havis Hidayat</LI>
-        <LI><strong>Kelas:</strong> 10 SMA</LI>
-        <LI><strong>Hobi:</strong> Membaca Buku</LI>
-        <LI><strong>Cita-Cita:</strong> sukses</Li>
-    </uL>
-    <h2>Tentang saya</h2>
-    <p>saya belajar membuat web menggunakan VS Code dan XAMPP Lokal server.</p>
-''
-</body>
-</html>
-<body>
-    <h3>keahkian yang sedang di pelajari</h3>
-<ul>
-    <li>HTML Dasar</li>
-    <li>Git Version Control</li>
-</ul>
-<p>Hubungi saya di: instagram@havis_110411</p>
-    <!--Diedit langsung dari web GitHub-->
-<p>Lihat proyek koding saya di: <a href="https://github.com/havishidayat9-rgb">Profil GitHub saya</a></p>
+    <!-- 2. MAIN (PARENT UTAMA KONTEN TENGAH) -->
+    <main class="konten-utama">
+
+        <!--SECTION 1:TENTANG SAYA-->
+            <section id="tentang" class="blok-konten">
+              <h2>Tentang saya</h2>
+              <p>Halo! Saya sedang belajar dasar-dasar web design,git dan HTML semantik di sekolah</p>
+            </section>
+
+            <!--SECTION 2: KEAHLIAN (MEMILIKI chILD LIST) -->
+            <section id="keahlian" class="blok-konten">
+            <h2>keahlian yang dipelajari</h2>
+            <ul class="daftar-skill">
+               <li>struktur dokumen HTML5</li>
+               <li>Version Control dengan Git & Github</li>
+               <li>pengaturan Layout parent-child</li>
+           </ul>     
+             </section>
+        
+        <!--section 3: KARTU PROYEK (MEMILIKI PARENT ARTICLE) -->
+        <section id="proyek" class="blok-konten">
+            <h2>proyek portopolio</h2>
+
+            <article class="kartu-proyek">
+                <h3>proyek 1: Halaman profil statis</h3>
+                <p>Latihan alur kerja cabang (*branch*) dan pengambungan kode (*merge*) di git bash.</p>
+    / </article>
+    </section>
+        
+</main>
+    
+<hr>
+
+   <!--FOOTER (PARENT BAGIAN BAWAH) -->
+   <footer id="kontak" class="footer-bawah">
+     <p>Dibuat denagan semangat belajar &copy; 2026 Havis Hidayat</p>
+       <p>
+            kunjungi:
+           <a href="https://github.com/havishidayat9-rgb" target="_blank">profil Github</a>
+        </p>
+   </footer>    
 
 </body>
+</html>
